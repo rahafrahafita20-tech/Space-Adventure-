@@ -206,7 +206,7 @@
       window.stopVoice();
       el.muted = false;
       el.onerror = fallback;
-      el.src = "audio/" + id + "-" + kind + ".wav";
+      el.src = id + "-" + kind + ".wav";
       var p = el.play();
       if (p && p.catch) p.catch(fallback);
     } catch (e) { fallback(); }
